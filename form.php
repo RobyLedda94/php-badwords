@@ -2,6 +2,9 @@
 // recupero i dati inseriti nel campo input 
 $paragrafo = $_GET['paragrafo'];
 $parola = $_GET['parola'];
+
+// dichiaro variabile lunghezzaparagrafo e le assegno il valore di paragrafo
+$lunghezza_paragrafo = strlen($paragrafo)
 ?>
 
 <!DOCTYPE html>
@@ -19,6 +22,9 @@ $parola = $_GET['parola'];
                 <div class="content text-center">
                     <h1>Il tuo paragrafo :</h1>
                     <p><?php echo $paragrafo ?></p>
+                    <h2>Di seguito la lunghezza del tuo paragrafo :</h2>
+                    <!-- mostro a video la lunghezza del paragrafo -->
+                    <p>Il tuo paragrafo è lungo : <?php echo $lunghezza_paragrafo ?> caratteri</p>
                     <h2>La tua parola :</h2>
                     <p><?php echo $parola ?></p>
                 </div>
