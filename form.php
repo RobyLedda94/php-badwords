@@ -12,7 +12,11 @@ $parola = $_GET['parola'];
     <title>Document</title>
 </head>
 <body>
-    <!-- mostro a video i valori inseriti nei campi input -->
-    <?php echo $paragrafo." ".$parola; ?>
+    <?php 
+        echo "
+        <div class="container"></div>
+        
+        "
+    ?>
 </body>
 </html>
